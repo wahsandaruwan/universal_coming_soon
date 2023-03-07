@@ -1,0 +1,109 @@
+/* -----------Global----------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -----------Container----------- */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./imgs/bg1.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 0 8%;
+}
+
+/* -----Overlay----- */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(39, 38, 38, 0.8);
+}
+
+/* -----Logo----- */
+.logo {
+  position: relative;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #000000;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+/* -----Content----- */
+.content {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #000000;
+  z-index: 10;
+  margin-right: 40px;
+}
+
+.content p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.content h1 span {
+  color: #ffffff;
+}
+
+/* Social Icons */
+.content a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: all 0.3s ease-in;
+  margin-right: 10px;
+}
+
+.content a:hover {
+  color: #000000;
+}
+
+/* Counter */
+.launch-time {
+  display: flex;
+  padding: 20px 0;
+}
+
+.launch-time div {
+  flex-basis: 120px;
+}
+
+.launch-time div p {
+  font-size: 2.5rem;
+}
+
+.launch-time div span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* -----------Responsiveness----------- */
+@media (max-width: 560px) {
+  /* Counter */
+  .launch-time div p {
+    font-size: 1.8rem;
+  }
+
+  .launch-time div span {
+    font-size: 1rem;
+  }
+}
