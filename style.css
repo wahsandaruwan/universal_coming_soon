@@ -49,6 +49,7 @@
   margin-right: 40px;
 }
 
+/* Title */
 .content p {
   font-size: 1.8rem;
   font-weight: 500;
@@ -94,6 +95,27 @@
 .launch-time div span {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+/* -----Rocket----- */
+.rocket {
+  width: 350px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    bottom: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
 }
 
 /* -----------Responsiveness----------- */
